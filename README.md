@@ -1,16 +1,38 @@
-# React + Vite
+# Nadeem Ahmad - Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+This is the source code for my personal portfolio website, featuring my projects, skills, experience, and contact details.
 
-Currently, two official plugins are available:
+## Live Demo
+You can view the live site here: [nadeemahmadxr.netlify.app](https://nadeemahmadxr.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+- **Frontend:** React.js, Vite, CSS
+- **Deployment:** Netlify
+- **Repository:** GitHub
 
-## React Compiler
+## Features
+- **Modern & Responsive Design:** Optimized for all screen sizes (mobile, tablet, desktop).
+- **Projects Showcase:** Clean display of major B2B, Recruitment, and Verification application portfolios.
+- **Interactive Elements:** Smooth navigation, custom theme styling, and command palette.
+- **Experience & Education:** Chronological listing of professional work and academic background.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Getting Started
 
-## Expanding the Oxlint configuration
+To run this project locally:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Nadeemahmad321/Nadeem-portfolio.git
+   ```
+2. Navigate to the frontend directory:
+   ```bash
+   cd portfolio-website/frontend
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
