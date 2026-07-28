@@ -16,7 +16,7 @@ export default function Hero({ scrollTo }) {
   useEffect(() => {
     let timer
     const currentPhrase = phrases[phraseIdx]
-    
+
     if (isDeleting) {
       timer = setTimeout(() => {
         setDisplayText(currentPhrase.substring(0, displayText.length - 1))
@@ -37,21 +37,6 @@ export default function Hero({ scrollTo }) {
     return () => clearTimeout(timer)
   }, [displayText, isDeleting, phraseIdx])
 
-  const handleMouseMove = (e) => {
-    const btn = e.currentTarget
-    const rect = btn.getBoundingClientRect()
-    const x = e.clientX - rect.left - rect.width / 2
-    const y = e.clientY - rect.top - rect.height / 2
-    const pullX = x * 0.35
-    const pullY = y * 0.35
-    btn.style.transform = `translate(${pullX}px, ${pullY}px)`
-  }
-
-  const handleMouseLeave = (e) => {
-    const btn = e.currentTarget
-    btn.style.transform = 'translate(0px, 0px)'
-  }
-
   return (
     <section id="home" className="hero-section">
       <div className="hero-content">
@@ -68,27 +53,15 @@ export default function Hero({ scrollTo }) {
           Specialized in <span className="typewriter-text">{displayText}</span><span className="typewriter-caret">|</span> Currently crafting high-performance mobile and web apps at Ultimate Itech Pvt Ltd.
         </p>
         <div className="hero-actions">
-          <button 
-            onClick={() => scrollTo('projects')} 
-            className="btn btn-primary"
-            onMouseMove={handleMouseMove}
-            onMouseLeave={handleMouseLeave}
-            style={{ transition: 'transform 0.1s ease-out' }}
-          >
+          <button onClick={() => scrollTo('projects')} className="btn btn-primary">
             View Showcase
           </button>
-          <button 
-            onClick={() => scrollTo('contact')} 
-            className="btn btn-secondary"
-            onMouseMove={handleMouseMove}
-            onMouseLeave={handleMouseLeave}
-            style={{ transition: 'transform 0.1s ease-out' }}
-          >
+          <button onClick={() => scrollTo('contact')} className="btn btn-secondary">
             Get in Touch
           </button>
         </div>
       </div>
-      
+
       <div className="hero-graphic">
         <div className="tech-slate unified-card">
           <div className="slate-bar">

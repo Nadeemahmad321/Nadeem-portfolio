@@ -5,7 +5,10 @@ export const projects = [
     desc: "Architected a streamlined mobile recruitment application optimized for fast queries. Features live multi-parameter job filters, application status trackers, and secure dashboard metrics for recruiters.",
     tech: ["React Native", "Node.js", "Express", "SQL Schema Design"],
     link: "https://hhh-jobs.com/",
-    category: "mobile"
+    category: "mobile",
+    challenge: "Building a recruiter dashboard that processes real-time applicant tracking metrics with minimal query delay.",
+    solution: "Optimized SQL indexing for job filter lookups, reducing query fetch time by 30%.",
+    architecture: ["React Native UI", "Express Auth Middleware", "Node.js Controller", "PostgreSQL database"]
   },
   {
     title: "IndianTradeMart",
@@ -13,7 +16,10 @@ export const projects = [
     desc: "Developed a B2B matching mobile application serving Indian manufacturers and global trade organizations. Implemented highly performant vendor dashboards and optimized indexing for category searches.",
     tech: ["React Native", "Express.js", "Node.js", "SQL Databases"],
     link: "https://play.google.com/apps/testing/com.indiantrademart",
-    category: "mobile"
+    category: "mobile",
+    challenge: "Scaling B2B vendor search matching across highly diverse manufacturer product catalog indices.",
+    solution: "Designed efficient SQL queries and text-search catalog index patterns for quick search responses.",
+    architecture: ["React Native App", "Node API Server", "SQL Database Cluster"]
   },
   {
     title: "Eimager",
@@ -21,7 +27,10 @@ export const projects = [
     desc: "Built a cross-platform React Native mobile application for enterprise screening. Features digital identity checks, qualification reviews, criminal record queries, and automated billing through Razorpay.",
     tech: ["React Native", "TypeScript", "Node.js", "SQL Backend"],
     link: "https://play.google.com/apps/testing/com.eimagerproject",
-    category: "mobile"
+    category: "mobile",
+    challenge: "Integrating secure multi-step verification APIs with zero lag and handling payment callbacks reliably.",
+    solution: "Designed a state-managed Razorpay callback verification system to automatically trigger screening results.",
+    architecture: ["React Native Client", "Express.js Backend", "Razorpay Gateway Integration", "SQL database"]
   },
   {
     title: "NutriFit",
@@ -29,7 +38,10 @@ export const projects = [
     desc: "Designed and built a responsive web application for Indian food search, calorie calculations, and daily meal planning. Features weight-based nutrition tracking, TDEE calculator, and A4 PDF export.",
     tech: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
     link: "https://nutrifitxnr.netlify.app",
-    category: "web"
+    category: "web",
+    challenge: "Managing weight-based TDEE calorie states and layout print renders dynamically across different client browsers.",
+    solution: "Created custom print stylesheets and pure JavaScript calculation algorithms for accurate calculations.",
+    architecture: ["Web HTML5 Front", "CSS3 Grid System", "JavaScript Meal Engine", "A4 print layout module"]
   },
   {
     title: "Personal Portfolio",
@@ -37,7 +49,10 @@ export const projects = [
     desc: "A minimal, high-performance developer portfolio website featuring a dynamic mouse-following glow spotlight, custom accent switcher, command palette navigation, and fully print-ready resume layout.",
     tech: ["React.js", "Vite", "Vanilla CSS", "Intersection Observer"],
     link: "https://nadeemahmadxr.netlify.app",
-    category: "web"
+    category: "web",
+    challenge: "Creating smooth, lag-free cursor mouse-spotlight effects at 60fps without heavy libraries.",
+    solution: "Used native CSS variable bindings driven by mousemove event listeners to update spotlight positioning.",
+    architecture: ["React Components", "Vite Bundler", "Custom CSS Customizer Panel", "EmailJS Gateway"]
   },
   {
     title: "Grocify",
@@ -45,7 +60,10 @@ export const projects = [
     desc: "A mobile grocery commerce application built with React Native, powered by a Node.js + Express + MongoDB backend. Implemented secure OTP authentication, wishlist, order management, and full admin panels.",
     tech: ["React Native", "TypeScript", "Node.js", "Express", "MongoDB"],
     link: "https://github.com/Nadeemahmad321/Grocify",
-    category: "mobile"
+    category: "mobile",
+    challenge: "Handling secure OTP authentication, cart synchronizations, and admin updates smoothly across mobile platforms.",
+    solution: "Configured Express-JWT middlewares, Mongoose database models, and React Native Redux style hooks.",
+    architecture: ["React Native Frontend", "Node & Express API Server", "MongoDB order schemas"]
   }
 ]
 
