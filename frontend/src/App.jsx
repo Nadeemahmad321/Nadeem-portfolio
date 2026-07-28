@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import emailjs from '@emailjs/browser'
 
 // Components
 import Navbar from './components/Navbar'
@@ -163,11 +164,31 @@ function App() {
       setFormStatus('error')
       return
     }
-    setFormStatus('success')
-    setTimeout(() => {
-      setFormData({ name: '', email: '', message: '' })
-      setFormStatus('')
-    }, 3000)
+
+    setFormStatus('sending')
+
+    const serviceID = "Grocifysmtp17@123"
+    const templateID = "Grocifysmtp17@123_Temp"
+    const publicKey = "08uWAAdwqbUJswT7p"
+
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      message: formData.message,
+      to_name: "Nadeem Ahmad"
+    }
+
+    emailjs.send(serviceID, templateID, templateParams, publicKey)
+      .then((response) => {
+        setFormStatus('success')
+        setTimeout(() => {
+          setFormData({ name: '', email: '', message: '' })
+          setFormStatus('')
+        }, 3000)
+      }, (err) => {
+        console.error('EmailJS Error:', err)
+        setFormStatus('error')
+      })
   }
 
   return (

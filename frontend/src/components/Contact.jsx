@@ -73,14 +73,14 @@ export default function Contact({ formData, setFormData, handleSubmit, formStatu
                 required
               ></textarea>
             </div>
-            <button type="submit" className="btn btn-primary submit-btn">
-              Send Inquiry
+            <button type="submit" className="btn btn-primary submit-btn" disabled={formStatus === 'sending'}>
+              {formStatus === 'sending' ? 'Sending...' : 'Send Inquiry'}
             </button>
             {formStatus === 'success' && (
-              <p className="status-msg success-msg">Inquiry successfully sent. Thank you.</p>
+              <p className="status-msg success-msg">Inquiry successfully sent. Thank you!</p>
             )}
             {formStatus === 'error' && (
-              <p className="status-msg error-msg">All form fields must be completed.</p>
+              <p className="status-msg error-msg">Something went wrong. Please try again.</p>
             )}
           </form>
         </div>
