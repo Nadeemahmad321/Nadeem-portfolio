@@ -17,7 +17,7 @@ export default function Hero({ scrollTo }) {
         <p className="hero-lead">
           Specialized in high-performance cross-platform development. Currently crafting apps with <strong>React Native</strong>, <strong>Node.js</strong>, and <strong>SQL</strong> at Ultimate Itech Pvt Ltd.
         </p>
-        <div className="hero-actions">
+        <div className="hero-actions" style={{ marginBottom: '32px' }}>
           <button onClick={() => scrollTo('projects')} className="btn btn-primary">
             View Showcase
           </button>
@@ -25,12 +25,9 @@ export default function Hero({ scrollTo }) {
             Get in Touch
           </button>
         </div>
-      </div>
-      <div className="hero-graphic" style={{ display: 'flex', flexDirection: 'column', gap: '24px', alignItems: 'flex-end' }}>
-        <div className="profile-image-container">
-          <img src={profileImg} alt="Nadeem Ahmad" className="profile-img" />
-        </div>
-        <div className="tech-slate">
+        
+        {/* Code Slate in Left Column */}
+        <div className="tech-slate" style={{ maxWidth: '440px' }}>
           <div className="slate-bar">
             <span className="s-dot"></span>
             <span className="s-dot"></span>
@@ -44,6 +41,11 @@ export default function Hero({ scrollTo }) {
             <div className="code-line indent"><span className="c-prop">current</span>: <span className="c-val">"Ultimate Itech Pvt Ltd"</span></div>
             <div className="code-line">&#125;;</div>
           </div>
+        </div>
+      </div>
+      <div className="hero-graphic">
+        <div className="profile-image-container">
+          <img src={profileImg} alt="Nadeem Ahmad" className="profile-img" />
         </div>
       </div>
     </section>
