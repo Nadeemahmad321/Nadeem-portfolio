@@ -89,22 +89,22 @@ export const experience = [
   },
   {
     role: "Web Development Intern",
-    company: "Oasis Infobyte",
-    duration: "1-12-2023 – 1-1-2024",
-    desc: [
-      "Worked on developing responsive web applications using React.js, HTML, CSS, and JavaScript.",
-      "Contributed to UI development, reusable component creation, and performance optimization.",
-      "Collaborated to improve user experience across different screen sizes and devices."
-    ]
-  },
-  {
-    role: "Web Development Intern",
     company: "Code Soft",
     duration: "19-7-2024 – 19-8-2024",
     desc: [
       "Completed a one-month web development internship, gaining hands-on practical experience across multiple real-world projects.",
       "Built a fully functional calculator, a professional landing page, and a personal portfolio webpage from scratch.",
       "Enhanced skills in HTML, CSS, and JavaScript through iterative project development and completion."
+    ]
+  },
+  {
+    role: "Web Development Intern",
+    company: "Oasis Infobyte",
+    duration: "1-12-2023 – 1-1-2024",
+    desc: [
+      "Worked on developing responsive web applications using React.js, HTML, CSS, and JavaScript.",
+      "Contributed to UI development, reusable component creation, and performance optimization.",
+      "Collaborated to improve user experience across different screen sizes and devices."
     ]
   }
 ]
