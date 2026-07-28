@@ -16,6 +16,24 @@ function App() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' })
   const [formStatus, setFormStatus] = useState('')
   
+  // Custom Accent Colors State
+  const [accentColor, setAccentColor] = useState('blue')
+  const [isCustomizerOpen, setIsCustomizerOpen] = useState(false)
+
+  const accents = [
+    { name: 'blue', value: '#3b82f6', label: 'Neon Blue' },
+    { name: 'purple', value: '#a855f7', label: 'Violet' },
+    { name: 'emerald', value: '#10b981', label: 'Emerald' },
+    { name: 'orange', value: '#f97316', label: 'Orange' },
+    { name: 'rose', value: '#ec4899', label: 'Rose' }
+  ]
+
+  const changeAccent = (colorName, colorVal) => {
+    setAccentColor(colorName)
+    document.documentElement.style.setProperty('--highlight', colorVal)
+    document.documentElement.style.setProperty('--highlight-glow', `${colorVal}1a`)
+  }
+
   // Command Palette States
   const [isCommandMenuOpen, setIsCommandMenuOpen] = useState(false)
   const [commandQuery, setCommandQuery] = useState('')
@@ -100,6 +118,8 @@ function App() {
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', 'dark')
+    document.documentElement.style.setProperty('--highlight', '#3b82f6')
+    document.documentElement.style.setProperty('--highlight-glow', '#3b82f61a')
 
     const observerOptions = {
       root: null,
@@ -118,8 +138,16 @@ function App() {
     const revealElements = document.querySelectorAll('.reveal')
     revealElements.forEach(el => observer.observe(el))
 
+    // Cursor Spotlight Tracking
+    const handleMouseMove = (e) => {
+      document.documentElement.style.setProperty('--mouse-x', `${e.clientX}px`)
+      document.documentElement.style.setProperty('--mouse-y', `${e.clientY}px`)
+    }
+    window.addEventListener('mousemove', handleMouseMove)
+
     return () => {
       revealElements.forEach(el => observer.unobserve(el))
+      window.removeEventListener('mousemove', handleMouseMove)
     }
   }, [])
 
@@ -175,6 +203,34 @@ function App() {
         selectedIdx={selectedIdx}
         setSelectedIdx={setSelectedIdx}
       />
+
+      {/* Floating Accent Color Customizer */}
+      <div className={`accent-customizer ${isCustomizerOpen ? 'open' : ''}`}>
+        <button 
+          onClick={() => setIsCustomizerOpen(!isCustomizerOpen)} 
+          className="customizer-toggle"
+          aria-label="Customize theme accent color"
+        >
+          <svg className="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+          </svg>
+        </button>
+        <div className="customizer-panel">
+          <h4>Customize Theme Accent</h4>
+          <div className="accent-grid">
+            {accents.map((acc) => (
+              <button
+                key={acc.name}
+                onClick={() => changeAccent(acc.name, acc.value)}
+                className={`accent-btn ${accentColor === acc.name ? 'active' : ''}`}
+                style={{ backgroundColor: acc.value }}
+                title={acc.label}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
 
       {/* Hidden PDF Printable CV Layout */}
       <PrintLayout />
