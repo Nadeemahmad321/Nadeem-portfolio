@@ -337,18 +337,42 @@ section {
   justify-content: flex-end;
 }
 
-.tech-slate {
-  background: #121214;
-  border: 1px solid var(--border);
-  border-radius: 8px;
+.profile-image-container {
+  position: relative;
   width: 100%;
-  max-width: 380px;
+  max-width: 320px;
+  aspect-ratio: 1;
+  border-radius: 20px;
   overflow: hidden;
+  border: 1px solid var(--border);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  background: var(--card-bg);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-[data-theme="light"] .tech-slate {
-  background: #f4f4f5;
+.profile-image-container:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: var(--highlight);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4), 0 0 40px var(--highlight-glow);
+}
+
+[data-theme="light"] .profile-image-container {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .profile-image-container:hover {
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1), 0 0 30px var(--highlight-glow);
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.profile-image-container:hover .profile-img {
+  transform: scale(1.05);
 }
 
 .slate-bar {
