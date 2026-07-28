@@ -1863,11 +1863,11 @@ section {
 
 @keyframes text-bounce {
   0%, 100% {
-    transform: translateY(0);
+    transform: translateY(0) scale(1) rotate(0deg);
     opacity: 0.7;
   }
   50% {
-    transform: translateY(-15px);
+    transform: translateY(-22px) scale(1.18) rotate(8deg);
     opacity: 1;
   }
 }
