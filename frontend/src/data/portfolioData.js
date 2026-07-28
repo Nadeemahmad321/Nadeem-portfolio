@@ -33,6 +33,13 @@ export const projects = [
     desc: "A minimal, high-performance developer portfolio website featuring a dynamic mouse-following glow spotlight, custom accent switcher, command palette navigation, and fully print-ready resume layout.",
     tech: ["React.js", "Vite", "Vanilla CSS", "Intersection Observer"],
     link: "https://nadeemahmadxr.netlify.app"
+  },
+  {
+    title: "Grocify",
+    subtitle: "Full-Stack Grocery Commerce App",
+    desc: "A mobile grocery commerce application built with React Native, powered by a Node.js + Express + MongoDB backend. Implemented secure OTP authentication, wishlist, order management, and full admin panels.",
+    tech: ["React Native", "TypeScript", "Node.js", "Express", "MongoDB"],
+    link: "https://github.com/Nadeemahmad321/Grocify"
   }
 ]
 
