@@ -201,7 +201,7 @@ function App() {
   }
 
   return (
-    <div className="portfolio-app">
+    <div className={`portfolio-app ${!isLoading ? 'content-loaded' : ''}`}>
       {/* Custom Preloader overlay */}
       {isLoading && (
         <div className="preloader">
