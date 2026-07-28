@@ -178,7 +178,7 @@ function App() {
       to_name: "Nadeem Ahmad"
     }
 
-    emailjs.send(serviceID, templateID, templateParams, publicKey)
+    emailjs.send(serviceID, templateID, templateParams, { publicKey: publicKey })
       .then((response) => {
         setFormStatus('success')
         setTimeout(() => {
@@ -187,6 +187,7 @@ function App() {
         }, 3000)
       }, (err) => {
         console.error('EmailJS Error:', err)
+        alert('EmailJS Error: ' + (err.text || err.message || JSON.stringify(err)))
         setFormStatus('error')
       })
   }
