@@ -26,6 +26,13 @@ export const projects = [
     desc: "Designed and built a responsive web application for Indian food search, calorie calculations, and daily meal planning. Features weight-based nutrition tracking, TDEE calculator, and A4 PDF export.",
     tech: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
     link: "https://nutrifitxnr.netlify.app"
+  },
+  {
+    title: "Personal Portfolio",
+    subtitle: "Interactive Developer Portfolio",
+    desc: "A minimal, high-performance developer portfolio website featuring a dynamic mouse-following glow spotlight, custom accent switcher, command palette navigation, and fully print-ready resume layout.",
+    tech: ["React.js", "Vite", "Vanilla CSS", "Intersection Observer"],
+    link: "https://nadeemahmadxr.netlify.app"
   }
 ]
 
