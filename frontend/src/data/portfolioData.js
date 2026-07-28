@@ -12,7 +12,7 @@ export const projects = [
     subtitle: "B2B Marketplace Mobile App",
     desc: "Developed a B2B matching mobile application serving Indian manufacturers and global trade organizations. Implemented highly performant vendor dashboards and optimized indexing for category searches.",
     tech: ["React Native", "Express.js", "Node.js", "SQL Databases"],
-    link: "https://indiantrademart.com/",
+    link: "https://play.google.com/apps/testing/com.indiantrademart",
     category: "mobile"
   },
   {
@@ -20,7 +20,7 @@ export const projects = [
     subtitle: "Background Screening Mobile App",
     desc: "Built a cross-platform React Native mobile application for enterprise screening. Features digital identity checks, qualification reviews, criminal record queries, and automated billing through Razorpay.",
     tech: ["React Native", "TypeScript", "Node.js", "SQL Backend"],
-    link: "https://www.eimager.com/",
+    link: "https://play.google.com/apps/testing/com.eimagerproject",
     category: "mobile"
   },
   {
