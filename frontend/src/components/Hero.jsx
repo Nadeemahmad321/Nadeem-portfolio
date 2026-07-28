@@ -38,6 +38,7 @@ export default function Hero({ scrollTo }) {
             <div className="profile-image-container mini-profile">
               <img src={profileImg} alt="Nadeem Ahmad" className="profile-img" />
             </div>
+            <div className="code-divider"></div>
             <div className="code-details">
               <div className="code-line"><span className="c-key">const</span> developer = &#123;</div>
               <div className="code-line indent"><span className="c-prop">name</span>: <span className="c-val">"Nadeem Ahmad"</span>,</div>
