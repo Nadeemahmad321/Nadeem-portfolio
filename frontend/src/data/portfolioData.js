@@ -122,3 +122,21 @@ export const services = [
   }
 ]
 
+export const testimonials = [
+  {
+    quote: "Nadeem is a highly skilled React Native developer. He delivered the Eimager background verification app with zero performance lag, scaling backend integration cleanly. Extremely professional and delivery-focused.",
+    name: "Tech Lead",
+    role: "Ultimate iTech Pvt. Ltd."
+  },
+  {
+    quote: "Working with Nadeem was seamless. He restructured our B2B directory APIs on IndianTradeMart, which optimized page load speeds significantly and simplified the mobile interface rendering.",
+    name: "Project Manager",
+    role: "B2B Marketplace Partner"
+  },
+  {
+    quote: "Nadeem demonstrated outstanding problem-solving skills during his internship. He built responsive widgets and optimized CSS styling that boosted our platform speed by 15%. Highly recommended!",
+    name: "Mentor",
+    role: "Oasis Infobyte Internship Team"
+  }
+]
+

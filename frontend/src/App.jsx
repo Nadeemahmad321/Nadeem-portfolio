@@ -7,6 +7,7 @@ import Projects from './components/Projects'
 import Services from './components/Services'
 import Experience from './components/Experience'
 import Skills from './components/Skills'
+import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
 import Faq from './components/Faq'
 import CommandPalette from './components/CommandPalette'
@@ -77,6 +78,7 @@ function App() {
     { label: "Navigate: Core Services", action: () => scrollTo('services'), shortcut: "W" },
     { label: "Navigate: Experience History", action: () => scrollTo('experience'), shortcut: "E" },
     { label: "Navigate: Technical Profile", action: () => scrollTo('skills'), shortcut: "S" },
+    { label: "Navigate: Recommendations", action: () => scrollTo('testimonials'), shortcut: "O" },
     { label: "Navigate: FAQ Section", action: () => scrollTo('faq'), shortcut: "F" },
     { label: "Navigate: Contact Details", action: () => scrollTo('contact'), shortcut: "C" },
     { label: "Action: Toggle Light/Dark Mode", action: toggleTheme, shortcut: "T" },
@@ -190,6 +192,7 @@ function App() {
         <Services />
         <Experience />
         <Skills />
+        <Testimonials />
         <Faq />
         <Contact
           formData={formData}

@@ -18,13 +18,13 @@ export default function Navbar({ activeSection, scrollTo, toggleTheme, theme, se
         
         {/* Toggleable Navigation Links */}
         <nav className={`nav-links ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
-          {['home', 'projects', 'services', 'experience', 'skills', 'faq', 'contact'].map((sec) => (
+          {['home', 'projects', 'services', 'experience', 'skills', 'testimonials', 'faq', 'contact'].map((sec) => (
             <button
               key={sec}
               onClick={() => handleNavClick(sec)}
               className={`nav-item ${activeSection === sec ? 'active' : ''}`}
             >
-              {sec === 'services' ? 'SERVICES' : sec.toUpperCase()}
+              {sec === 'services' ? 'SERVICES' : sec === 'testimonials' ? 'REVIEWS' : sec.toUpperCase()}
             </button>
           ))}
         </nav>
