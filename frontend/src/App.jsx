@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Projects from './components/Projects'
+import Services from './components/Services'
 import Experience from './components/Experience'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
@@ -73,6 +74,7 @@ function App() {
   const commands = [
     { label: "Navigate: Home", action: () => scrollTo('home'), shortcut: "H" },
     { label: "Navigate: Selected Works", action: () => scrollTo('projects'), shortcut: "P" },
+    { label: "Navigate: Core Services", action: () => scrollTo('services'), shortcut: "W" },
     { label: "Navigate: Experience History", action: () => scrollTo('experience'), shortcut: "E" },
     { label: "Navigate: Technical Profile", action: () => scrollTo('skills'), shortcut: "S" },
     { label: "Navigate: FAQ Section", action: () => scrollTo('faq'), shortcut: "F" },
@@ -185,6 +187,7 @@ function App() {
       <main className="content-container">
         <Hero scrollTo={scrollTo} />
         <Projects />
+        <Services />
         <Experience />
         <Skills />
         <Faq />

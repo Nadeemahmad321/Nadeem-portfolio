@@ -1441,6 +1441,125 @@ section {
   line-height: 1.6;
 }
 
+/* --- Projects Category Filter --- */
+.filter-bar {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.filter-btn {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.filter-btn:hover {
+  color: var(--fg);
+  border-color: var(--border-strong);
+}
+
+.filter-btn.active {
+  background: var(--accent);
+  color: var(--accent-inverse);
+  border-color: var(--accent);
+  box-shadow: 0 4px 15px var(--highlight-glow);
+}
+
+/* --- Services / What I Do Section --- */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.service-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.service-card:hover {
+  background: var(--card-hover);
+  border-color: var(--highlight);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="light"] .service-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+.service-icon-box {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  color: var(--highlight);
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  transition: all 0.3s ease;
+}
+
+[data-theme="light"] .service-icon-box {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.service-card:hover .service-icon-box {
+  background: var(--highlight);
+  color: var(--accent-inverse);
+  border-color: var(--highlight);
+}
+
+.service-icon-box .icon {
+  width: 22px;
+  height: 22px;
+}
+
+.service-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+  color: var(--fg);
+}
+
+.service-desc {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.service-metric {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--highlight);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+
 
 
 

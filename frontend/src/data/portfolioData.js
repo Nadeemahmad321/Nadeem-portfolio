@@ -4,42 +4,48 @@ export const projects = [
     subtitle: "Recruitment Mobile App",
     desc: "Architected a streamlined mobile recruitment application optimized for fast queries. Features live multi-parameter job filters, application status trackers, and secure dashboard metrics for recruiters.",
     tech: ["React Native", "Node.js", "Express", "SQL Schema Design"],
-    link: "https://hhh-jobs.com/"
+    link: "https://hhh-jobs.com/",
+    category: "mobile"
   },
   {
     title: "IndianTradeMart",
     subtitle: "B2B Marketplace Mobile App",
     desc: "Developed a B2B matching mobile application serving Indian manufacturers and global trade organizations. Implemented highly performant vendor dashboards and optimized indexing for category searches.",
     tech: ["React Native", "Express.js", "Node.js", "SQL Databases"],
-    link: "https://indiantrademart.com/"
+    link: "https://indiantrademart.com/",
+    category: "mobile"
   },
   {
     title: "Eimager",
     subtitle: "Background Screening Mobile App",
     desc: "Built a cross-platform React Native mobile application for enterprise screening. Features digital identity checks, qualification reviews, criminal record queries, and automated billing through Razorpay.",
     tech: ["React Native", "TypeScript", "Node.js", "SQL Backend"],
-    link: "https://www.eimager.com/"
+    link: "https://www.eimager.com/",
+    category: "mobile"
   },
   {
     title: "NutriFit",
     subtitle: "Smart Recipe & Calorie Planner",
     desc: "Designed and built a responsive web application for Indian food search, calorie calculations, and daily meal planning. Features weight-based nutrition tracking, TDEE calculator, and A4 PDF export.",
     tech: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
-    link: "https://nutrifitxnr.netlify.app"
+    link: "https://nutrifitxnr.netlify.app",
+    category: "web"
   },
   {
     title: "Personal Portfolio",
     subtitle: "Interactive Developer Portfolio",
     desc: "A minimal, high-performance developer portfolio website featuring a dynamic mouse-following glow spotlight, custom accent switcher, command palette navigation, and fully print-ready resume layout.",
     tech: ["React.js", "Vite", "Vanilla CSS", "Intersection Observer"],
-    link: "https://nadeemahmadxr.netlify.app"
+    link: "https://nadeemahmadxr.netlify.app",
+    category: "web"
   },
   {
     title: "Grocify",
     subtitle: "Full-Stack Grocery Commerce App",
     desc: "A mobile grocery commerce application built with React Native, powered by a Node.js + Express + MongoDB backend. Implemented secure OTP authentication, wishlist, order management, and full admin panels.",
     tech: ["React Native", "TypeScript", "Node.js", "Express", "MongoDB"],
-    link: "https://github.com/Nadeemahmad321/Grocify"
+    link: "https://github.com/Nadeemahmad321/Grocify",
+    category: "mobile"
   }
 ]
 
@@ -92,3 +98,27 @@ export const education = [
     duration: "2016 – 2017"
   }
 ]
+
+export const services = [
+  {
+    title: "Mobile App Development",
+    desc: "Designing and building high-performance, cross-platform Android & iOS applications using React Native. Focused on smooth rendering, offline-first architectures, and clean native UI integrations.",
+    metric: "React Native specialist"
+  },
+  {
+    title: "API Architecture & Design",
+    desc: "Creating scalable RESTful backend services using Node.js & Express.js. Experienced in designing robust route patterns, auth middlewares, and connecting modules to secure databases.",
+    metric: "Node.js & Express backend"
+  },
+  {
+    title: "Database Schema Design",
+    desc: "Structuring clean relational databases using SQL (MySQL) and flexible document catalogs with MongoDB. Experienced in indexing, queries optimization, and database normalization.",
+    metric: "SQL & MongoDB databases"
+  },
+  {
+    title: "Performance Tuning",
+    desc: "Optimizing application bundle sizes, reducing mobile rendering lags, and refactoring API response structures to ensure fast load times and a highly responsive user experience.",
+    metric: "60fps & SEO optimization"
+  }
+]
+
