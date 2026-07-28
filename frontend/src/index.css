@@ -196,6 +196,36 @@ body {
   height: 16px;
 }
 
+/* Theme Toggle Click Animations */
+.theme-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.theme-toggle-spin {
+  animation: toggle-burst 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.icon-swap {
+  animation: icon-flip 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes toggle-burst {
+  0%   { transform: scale(1) rotate(0deg); }
+  30%  { transform: scale(0.75) rotate(-20deg); background: var(--highlight-glow); border-radius: 50%; }
+  60%  { transform: scale(1.35) rotate(20deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+@keyframes icon-flip {
+  0%   { transform: scale(1) rotate(0deg); opacity: 1; }
+  40%  { transform: scale(0) rotate(-180deg); opacity: 0; }
+  60%  { transform: scale(0) rotate(180deg); opacity: 0; }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
 /* Sections Base Layout */
 section {
   padding: 100px 0;

@@ -3,10 +3,17 @@ import { Icons } from '../icons/SvgIcons'
 
 export default function Navbar({ activeSection, scrollTo, toggleTheme, theme, setIsCommandMenuOpen }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isAnimating, setIsAnimating] = useState(false)
 
   const handleNavClick = (sec) => {
     scrollTo(sec)
     setIsMobileMenuOpen(false)
+  }
+
+  const handleThemeToggle = () => {
+    toggleTheme()
+    setIsAnimating(true)
+    setTimeout(() => setIsAnimating(false), 500)
   }
 
   return (
@@ -36,8 +43,14 @@ export default function Navbar({ activeSection, scrollTo, toggleTheme, theme, se
           <a href="/Nadeem_Ahmad.pdf" download="Nadeem_Ahmad_Resume.pdf" className="btn btn-secondary nav-cv-btn" style={{ padding: '6px 12px', fontSize: '12px', textDecoration: 'none' }}>
             Download CV
           </a>
-          <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle Theme">
-            {theme === 'dark' ? <Icons.Sun /> : <Icons.Moon />}
+          <button 
+            className={`theme-toggle ${isAnimating ? 'theme-toggle-spin' : ''}`} 
+            onClick={handleThemeToggle} 
+            aria-label="Toggle Theme"
+          >
+            <span className={`theme-icon-wrap ${isAnimating ? 'icon-swap' : ''}`}>
+              {theme === 'dark' ? <Icons.Sun /> : <Icons.Moon />}
+            </span>
           </button>
           
           {/* Hamburger Menu Button */}
