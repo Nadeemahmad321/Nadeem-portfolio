@@ -24,6 +24,7 @@ function App() {
   // Custom Accent Colors State
   const [accentColor, setAccentColor] = useState('blue')
   const [isCustomizerOpen, setIsCustomizerOpen] = useState(false)
+  const [scrollProgress, setScrollProgress] = useState(0)
 
   const accents = [
     { name: 'blue', value: '#3b82f6', label: 'Neon Blue' },
@@ -124,6 +125,18 @@ function App() {
     return () => window.removeEventListener('keydown', handleKeyDown)
   }, [isCommandMenuOpen, filteredCommands, selectedIdx])
 
+  // Scroll progress tracker
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight
+      const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0
+      setScrollProgress(Math.min(progress, 100))
+    }
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', 'dark')
     document.documentElement.style.setProperty('--highlight', '#3b82f6')
@@ -221,6 +234,14 @@ function App() {
       {/* Structural Background Layout */}
       <div className="noise-overlay"></div>
       <div className="mesh-gradient"></div>
+
+      {/* Scroll Progress Bar */}
+      <div className="scroll-progress-bar">
+        <div
+          className="scroll-progress-fill"
+          style={{ width: `${scrollProgress}%` }}
+        />
+      </div>
 
       {/* Navigation */}
       <Navbar
