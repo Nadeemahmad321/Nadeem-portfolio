@@ -386,6 +386,10 @@ section {
   transition: all 0.3s ease;
 }
 
+.tech-slate.unified-card {
+  max-width: 480px;
+}
+
 [data-theme="light"] .tech-slate {
   background: #f4f4f5;
 }
@@ -394,6 +398,33 @@ section {
   transform: translateY(-4px);
   border-color: var(--highlight);
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4), 0 0 30px var(--highlight-glow);
+}
+
+.unified-content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.mini-profile {
+  width: 110px;
+  height: 110px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  box-shadow: none;
+}
+
+.mini-profile:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .unified-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
 }
 
 .slate-bar {

@@ -17,7 +17,7 @@ export default function Hero({ scrollTo }) {
         <p className="hero-lead">
           Specialized in high-performance cross-platform development. Currently crafting apps with <strong>React Native</strong>, <strong>Node.js</strong>, and <strong>SQL</strong> at Ultimate Itech Pvt Ltd.
         </p>
-        <div className="hero-actions" style={{ marginBottom: '32px' }}>
+        <div className="hero-actions">
           <button onClick={() => scrollTo('projects')} className="btn btn-primary">
             View Showcase
           </button>
@@ -25,27 +25,28 @@ export default function Hero({ scrollTo }) {
             Get in Touch
           </button>
         </div>
-        
-        {/* Code Slate in Left Column */}
-        <div className="tech-slate" style={{ maxWidth: '440px' }}>
+      </div>
+      
+      <div className="hero-graphic">
+        <div className="tech-slate unified-card">
           <div className="slate-bar">
             <span className="s-dot"></span>
             <span className="s-dot"></span>
             <span className="s-dot"></span>
           </div>
-          <div className="slate-content">
-            <div className="code-line"><span className="c-key">const</span> developer = &#123;</div>
-            <div className="code-line indent"><span className="c-prop">name</span>: <span className="c-val">"Nadeem Ahmad"</span>,</div>
-            <div className="code-line indent"><span className="c-prop">role</span>: <span className="c-val">"Fullstack Mobile & Web"</span>,</div>
-            <div className="code-line indent"><span className="c-prop">stack</span>: [<span className="c-val">"React Native"</span>, <span className="c-val">"Node"</span>, <span className="c-val">"SQL"</span>],</div>
-            <div className="code-line indent"><span className="c-prop">current</span>: <span className="c-val">"Ultimate Itech Pvt Ltd"</span></div>
-            <div className="code-line">&#125;;</div>
+          <div className="slate-content unified-content">
+            <div className="profile-image-container mini-profile">
+              <img src={profileImg} alt="Nadeem Ahmad" className="profile-img" />
+            </div>
+            <div className="code-details">
+              <div className="code-line"><span className="c-key">const</span> developer = &#123;</div>
+              <div className="code-line indent"><span className="c-prop">name</span>: <span className="c-val">"Nadeem Ahmad"</span>,</div>
+              <div className="code-line indent"><span className="c-prop">role</span>: <span className="c-val">"Fullstack Mobile"</span>,</div>
+              <div className="code-line indent"><span className="c-prop">stack</span>: [<span className="c-val">"React Native"</span>, <span className="c-val">"Node"</span>],</div>
+              <div className="code-line indent"><span className="c-prop">current</span>: <span className="c-val">"Ultimate iTech"</span></div>
+              <div className="code-line">&#125;;</div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div className="hero-graphic">
-        <div className="profile-image-container">
-          <img src={profileImg} alt="Nadeem Ahmad" className="profile-img" />
         </div>
       </div>
     </section>
