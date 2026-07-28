@@ -3,7 +3,8 @@ import { Icons } from '../icons/SvgIcons'
 
 export default function Navbar({ activeSection, scrollTo, toggleTheme, theme, setIsCommandMenuOpen }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const [isAnimating, setIsAnimating] = useState(false)
+  const [rotation, setRotation] = useState(0)
+  const [glowing, setGlowing] = useState(false)
 
   const handleNavClick = (sec) => {
     scrollTo(sec)
@@ -12,8 +13,9 @@ export default function Navbar({ activeSection, scrollTo, toggleTheme, theme, se
 
   const handleThemeToggle = () => {
     toggleTheme()
-    setIsAnimating(true)
-    setTimeout(() => setIsAnimating(false), 500)
+    setRotation(prev => prev + 360)
+    setGlowing(true)
+    setTimeout(() => setGlowing(false), 600)
   }
 
   return (
@@ -44,13 +46,15 @@ export default function Navbar({ activeSection, scrollTo, toggleTheme, theme, se
             Download CV
           </a>
           <button 
-            className={`theme-toggle ${isAnimating ? 'theme-toggle-spin' : ''}`} 
+            className={`theme-toggle ${glowing ? 'theme-glow' : ''}`} 
             onClick={handleThemeToggle} 
             aria-label="Toggle Theme"
+            style={{
+              transform: `rotate(${rotation}deg)`,
+              transition: 'transform 0.55s cubic-bezier(0.34, 1.56, 0.64, 1)'
+            }}
           >
-            <span className={`theme-icon-wrap ${isAnimating ? 'icon-swap' : ''}`}>
-              {theme === 'dark' ? <Icons.Sun /> : <Icons.Moon />}
-            </span>
+            {theme === 'dark' ? <Icons.Sun /> : <Icons.Moon />}
           </button>
           
           {/* Hamburger Menu Button */}

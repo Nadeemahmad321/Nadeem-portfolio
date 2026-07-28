@@ -196,55 +196,18 @@ body {
   height: 16px;
 }
 
-/* Theme Toggle Click Animations */
+/* Theme Toggle Click Animation */
 .theme-icon-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 
-.theme-toggle {
-  position: relative;
-  overflow: visible;
-}
-
-.theme-toggle-spin {
-  animation: toggle-ring-pulse 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
-
-.theme-toggle-spin::after {
-  content: '';
-  position: absolute;
-  inset: -6px;
+.theme-glow {
+  color: var(--highlight) !important;
+  box-shadow: 0 0 0 6px var(--highlight-glow), 0 0 18px var(--highlight-glow);
   border-radius: 50%;
-  border: 2px solid var(--highlight);
-  animation: ripple-ring 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-  pointer-events: none;
-}
-
-.icon-swap {
-  animation: icon-morph 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
-
-@keyframes toggle-ring-pulse {
-  0%   { transform: scale(1) rotate(0deg); }
-  25%  { transform: scale(0.8) rotate(-45deg); }
-  60%  { transform: scale(1.2) rotate(340deg); }
-  80%  { transform: scale(0.95) rotate(360deg); }
-  100% { transform: scale(1) rotate(360deg); }
-}
-
-@keyframes ripple-ring {
-  0%   { transform: scale(0.6); opacity: 1; }
-  100% { transform: scale(2.2); opacity: 0; }
-}
-
-@keyframes icon-morph {
-  0%   { transform: scale(1) rotate(0deg);   opacity: 1; filter: blur(0px); }
-  35%  { transform: scale(0.1) rotate(-90deg); opacity: 0; filter: blur(4px); }
-  65%  { transform: scale(0.1) rotate(90deg);  opacity: 0; filter: blur(4px); }
-  100% { transform: scale(1) rotate(0deg);   opacity: 1; filter: blur(0px); }
+  transition: box-shadow 0.6s ease, color 0.3s ease;
 }
 
 /* Sections Base Layout */
