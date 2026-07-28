@@ -1,7 +1,42 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import profileImg from '../assets/nadeem.jpg'
 
 export default function Hero({ scrollTo }) {
+  const [displayText, setDisplayText] = useState('')
+  const [phraseIdx, setPhraseIdx] = useState(0)
+  const [isDeleting, setIsDeleting] = useState(false)
+
+  const phrases = [
+    "React Native Dev.",
+    "REST API Architecture.",
+    "Performance Optimization.",
+    "Database Schema Design."
+  ]
+
+  useEffect(() => {
+    let timer
+    const currentPhrase = phrases[phraseIdx]
+    
+    if (isDeleting) {
+      timer = setTimeout(() => {
+        setDisplayText(currentPhrase.substring(0, displayText.length - 1))
+      }, 40)
+    } else {
+      timer = setTimeout(() => {
+        setDisplayText(currentPhrase.substring(0, displayText.length + 1))
+      }, 80)
+    }
+
+    if (!isDeleting && displayText === currentPhrase) {
+      timer = setTimeout(() => setIsDeleting(true), 2000)
+    } else if (isDeleting && displayText === '') {
+      setIsDeleting(false)
+      setPhraseIdx((prev) => (prev + 1) % phrases.length)
+    }
+
+    return () => clearTimeout(timer)
+  }, [displayText, isDeleting, phraseIdx])
+
   return (
     <section id="home" className="hero-section">
       <div className="hero-content">
@@ -15,7 +50,7 @@ export default function Hero({ scrollTo }) {
           <span className="highlight-text">Mobile & Web Engineer</span>
         </h1>
         <p className="hero-lead">
-          Specialized in high-performance cross-platform development. Currently crafting apps with <strong>React Native</strong>, <strong>Node.js</strong>, and <strong>SQL</strong> at Ultimate Itech Pvt Ltd.
+          Specialized in <span className="typewriter-text">{displayText}</span><span className="typewriter-caret">|</span> Currently crafting high-performance mobile and web apps at Ultimate Itech Pvt Ltd.
         </p>
         <div className="hero-actions">
           <button onClick={() => scrollTo('projects')} className="btn btn-primary">
