@@ -26,9 +26,24 @@ export default function Hero({ scrollTo }) {
           </button>
         </div>
       </div>
-      <div className="hero-graphic">
+      <div className="hero-graphic" style={{ display: 'flex', flexDirection: 'column', gap: '24px', alignItems: 'flex-end' }}>
         <div className="profile-image-container">
           <img src={profileImg} alt="Nadeem Ahmad" className="profile-img" />
+        </div>
+        <div className="tech-slate">
+          <div className="slate-bar">
+            <span className="s-dot"></span>
+            <span className="s-dot"></span>
+            <span className="s-dot"></span>
+          </div>
+          <div className="slate-content">
+            <div className="code-line"><span className="c-key">const</span> developer = &#123;</div>
+            <div className="code-line indent"><span className="c-prop">name</span>: <span className="c-val">"Nadeem Ahmad"</span>,</div>
+            <div className="code-line indent"><span className="c-prop">role</span>: <span className="c-val">"Fullstack Mobile & Web"</span>,</div>
+            <div className="code-line indent"><span className="c-prop">stack</span>: [<span className="c-val">"React Native"</span>, <span className="c-val">"Node"</span>, <span className="c-val">"SQL"</span>],</div>
+            <div className="code-line indent"><span className="c-prop">current</span>: <span className="c-val">"Ultimate Itech Pvt Ltd"</span></div>
+            <div className="code-line">&#125;;</div>
+          </div>
         </div>
       </div>
     </section>

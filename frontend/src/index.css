@@ -375,6 +375,27 @@ section {
   transform: scale(1.05);
 }
 
+.tech-slate {
+  background: #121214;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 320px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+[data-theme="light"] .tech-slate {
+  background: #f4f4f5;
+}
+
+.tech-slate:hover {
+  transform: translateY(-4px);
+  border-color: var(--highlight);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4), 0 0 30px var(--highlight-glow);
+}
+
 .slate-bar {
   display: flex;
   gap: 6px;
