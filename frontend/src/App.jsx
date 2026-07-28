@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import emailjs from '@emailjs/browser'
 
 // Components
@@ -25,6 +25,55 @@ function App() {
   const [accentColor, setAccentColor] = useState('blue')
   const [isCustomizerOpen, setIsCustomizerOpen] = useState(false)
   const [scrollProgress, setScrollProgress] = useState(0)
+
+  // Custom cursor refs
+  const cursorDot = useRef(null)
+  const cursorRing = useRef(null)
+  const ringPos = useRef({ x: 0, y: 0 })
+  const mousePos = useRef({ x: 0, y: 0 })
+
+  useEffect(() => {
+    const isMobile = window.matchMedia('(pointer: coarse)').matches
+    if (isMobile) return
+
+    const dot = cursorDot.current
+    const ring = cursorRing.current
+    if (!dot || !ring) return
+
+    const moveCursor = (e) => {
+      mousePos.current = { x: e.clientX, y: e.clientY }
+      dot.style.transform = `translate(${e.clientX - 4}px, ${e.clientY - 4}px)`
+    }
+
+    let rafId
+    const animateRing = () => {
+      ringPos.current.x += (mousePos.current.x - ringPos.current.x) * 0.12
+      ringPos.current.y += (mousePos.current.y - ringPos.current.y) * 0.12
+      ring.style.transform = `translate(${ringPos.current.x - 18}px, ${ringPos.current.y - 18}px)`
+      rafId = requestAnimationFrame(animateRing)
+    }
+
+    const handleEnter = () => { dot.style.opacity = '1'; ring.style.opacity = '1' }
+    const handleLeave = () => { dot.style.opacity = '0'; ring.style.opacity = '0' }
+    const handleMouseDown = () => ring.classList.add('cursor-click')
+    const handleMouseUp   = () => ring.classList.remove('cursor-click')
+
+    window.addEventListener('mousemove', moveCursor)
+    document.addEventListener('mouseenter', handleEnter)
+    document.addEventListener('mouseleave', handleLeave)
+    window.addEventListener('mousedown', handleMouseDown)
+    window.addEventListener('mouseup', handleMouseUp)
+    rafId = requestAnimationFrame(animateRing)
+
+    return () => {
+      window.removeEventListener('mousemove', moveCursor)
+      document.removeEventListener('mouseenter', handleEnter)
+      document.removeEventListener('mouseleave', handleLeave)
+      window.removeEventListener('mousedown', handleMouseDown)
+      window.removeEventListener('mouseup', handleMouseUp)
+      cancelAnimationFrame(rafId)
+    }
+  }, [])
 
   const accents = [
     { name: 'blue', value: '#3b82f6', label: 'Neon Blue' },
@@ -230,6 +279,10 @@ function App() {
           </div>
         </div>
       )}
+
+      {/* Custom Cursor */}
+      <div ref={cursorDot} className="cursor-dot" />
+      <div ref={cursorRing} className="cursor-ring" />
 
       {/* Structural Background Layout */}
       <div className="noise-overlay"></div>
