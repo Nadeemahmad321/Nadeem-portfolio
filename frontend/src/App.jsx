@@ -168,7 +168,7 @@ function App() {
     setFormStatus('sending')
 
     const serviceID = "Grocifysmtp17@123"
-    const templateID = "Grocifysmtp17@123_Temp"
+    const templateID = "template_g49etag"
     const publicKey = "08uWAAdwqbUJswT7p"
 
     const templateParams = {
