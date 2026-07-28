@@ -5,13 +5,13 @@ import { projects } from '../data/portfolioData'
 export default function Projects() {
   return (
     <section id="projects" className="section-block">
-      <div className="section-head">
+      <div className="section-head reveal">
         <span className="section-num">01 / PROJECTS</span>
         <h2>Selected Works</h2>
       </div>
       <div className="project-grid">
         {projects.map((proj, idx) => (
-          <div key={idx} className="project-card">
+          <div key={idx} className={`project-card reveal delay-${(idx + 1) * 100}`}>
             <div className="card-top">
               <span className="card-subtitle">{proj.subtitle}</span>
               <a href={proj.link} target="_blank" rel="noreferrer" className="live-link">

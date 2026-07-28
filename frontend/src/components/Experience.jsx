@@ -4,13 +4,13 @@ import { experience } from '../data/portfolioData'
 export default function Experience() {
   return (
     <section id="experience" className="section-block">
-      <div className="section-head">
+      <div className="section-head reveal">
         <span className="section-num">02 / HISTORY</span>
         <h2>Professional Experience</h2>
       </div>
       <div className="experience-timeline">
         {experience.map((exp, idx) => (
-          <div key={idx} className="timeline-item">
+          <div key={idx} className={`timeline-item reveal delay-${(idx + 1) * 100}`}>
             <div className="time-meta">
               <span className="duration">{exp.duration}</span>
               <span className="company">{exp.company}</span>

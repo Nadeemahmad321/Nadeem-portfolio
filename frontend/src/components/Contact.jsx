@@ -5,7 +5,7 @@ export default function Contact({ formData, setFormData, handleSubmit, formStatu
   return (
     <section id="contact" className="section-block contact-block">
       <div className="contact-grid">
-        <div className="contact-info">
+        <div className="contact-info reveal">
           <div className="section-head">
             <span className="section-num">04 / INQUIRIES</span>
             <h2>Let's talk about building something.</h2>
@@ -36,7 +36,7 @@ export default function Contact({ formData, setFormData, handleSubmit, formStatu
           </div>
         </div>
 
-        <div className="contact-form-container">
+        <div className="contact-form-container reveal delay-200">
           <form onSubmit={handleSubmit} className="contact-form">
             <div className="form-row">
               <div className="form-group">
