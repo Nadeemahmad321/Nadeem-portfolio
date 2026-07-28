@@ -19,6 +19,7 @@ function App() {
   const [activeSection, setActiveSection] = useState('home')
   const [formData, setFormData] = useState({ name: '', email: '', message: '' })
   const [formStatus, setFormStatus] = useState('')
+  const [isLoading, setIsLoading] = useState(true)
   
   // Custom Accent Colors State
   const [accentColor, setAccentColor] = useState('blue')
@@ -158,6 +159,13 @@ function App() {
     }
   }, [])
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false)
+    }, 1500)
+    return () => clearTimeout(timer)
+  }, [])
+
   const handleSubmit = (e) => {
     e.preventDefault()
     if (!formData.name || !formData.email || !formData.message) {
@@ -194,6 +202,23 @@ function App() {
 
   return (
     <div className="portfolio-app">
+      {/* Custom Preloader overlay */}
+      {isLoading && (
+        <div className="preloader">
+          <div className="preloader-content">
+            <div className="preloader-spinner"></div>
+            <div className="preloader-text">
+              <span className="char">N</span>
+              <span className="char">A</span>
+              <span className="char">D</span>
+              <span className="char">E</span>
+              <span className="char">E</span>
+              <span className="char">M</span>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Structural Background Layout */}
       <div className="noise-overlay"></div>
       <div className="mesh-gradient"></div>
