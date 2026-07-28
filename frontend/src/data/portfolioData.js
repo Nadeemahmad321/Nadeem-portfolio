@@ -54,31 +54,23 @@ export const skills = [
 
 export const experience = [
   {
-    role: "Trainee Application Developer",
-    company: "Ultimate Itech Pvt Ltd",
-    duration: "Present",
+    role: "Trainee Application Developer (React Native)",
+    company: "Ultimate iTech Pvt. Ltd.",
+    duration: "26-03-2026 – Present",
     desc: [
-      "Developing cross-platform mobile apps for Android & iOS using React Native.",
-      "Architecting clean backend modules using Node.js & Express connected to SQL databases.",
-      "Optimizing interface flows to maintain a smooth, 60fps rendering standard across devices."
+      "Currently developing React Native applications, contributing to projects such as Eimager and Indian Trade Mart.",
+      "Working on responsive UI development, REST API integration, bug fixing, and performance optimization.",
+      "Delivering scalable, user-friendly mobile applications and maintaining smooth interface rendering."
     ]
   },
   {
     role: "Web Development Intern",
     company: "Oasis Infobyte",
-    duration: "Dec 2023 – Jan 2024",
+    duration: "1-12-2023 – 1-1-2024",
     desc: [
-      "Built and styled responsive multi-page web applications utilizing CSS3 structures and vanilla JS.",
-      "Refactored styling rules, boosting mobile performance scores by approximately 15%."
-    ]
-  },
-  {
-    role: "Web Development Intern",
-    company: "Code Soft",
-    duration: "Jul 2024 – Aug 2024",
-    desc: [
-      "Constructed custom tool landing pages and optimized interactive web widgets.",
-      "Collaborated closely with design specs to enforce pixel-perfect cross-browser rendering."
+      "Worked on developing responsive web applications using React.js, HTML, CSS, and JavaScript.",
+      "Contributed to UI development, reusable component creation, and performance optimization.",
+      "Collaborated to improve user experience across different screen sizes and devices."
     ]
   }
 ]

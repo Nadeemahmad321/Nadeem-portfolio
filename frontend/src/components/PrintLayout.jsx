@@ -74,68 +74,68 @@ export default function PrintLayout() {
         
         <div className="resume-item">
           <div className="resume-row">
-            <strong>Airbnb website</strong>
-            <span>Mern Stack</span>
+            <strong>Eimager Mobile App</strong>
+            <span>React Native</span>
           </div>
           <ul className="resume-bullets">
-            <li><strong>About project</strong> Developed an Airbnb web app using MERN stack with features like booking, favorites, and host functionalities for adding, editing, and deleting homes.</li>
+            <li>Developed a React Native application for an employee background verification platform with responsive UI, REST API integration, authentication, and performance optimization to deliver a smooth mobile experience.</li>
           </ul>
         </div>
 
         <div className="resume-item">
           <div className="resume-row">
-            <strong>Personal portfolio website</strong>
-            <span>JavaScript</span>
+            <strong>Indian Trade Mart Mobile App</strong>
+            <span>React Native</span>
           </div>
           <ul className="resume-bullets">
-            <li><strong>About project</strong> Designed a dynamic and responsive portfolio website to showcase personal details, projects, and resume, ensuring accessibility across all devices.</li>
+            <li>Developed a React Native B2B marketplace application with responsive UI, reusable components, REST API integration, product browsing, and performance optimization for an enhanced user experience.</li>
           </ul>
         </div>
 
         <div className="resume-item">
           <div className="resume-row">
-            <strong>Job finder website</strong>
-            <span>ReactJS</span>
+            <strong>Personal Portfolio Website</strong>
+            <span>React.js</span>
           </div>
           <ul className="resume-bullets">
-            <li><strong>About project</strong> Developed a job finder website using React Router for smooth navigation across Home, Jobs, Career, and Contact sections, enhancing the user experience.</li>
+            <li>Developed a dynamic and fully responsive portfolio website using React.js to showcase personal information, projects, skills, and resume, with a modern UI and optimized user experience across multiple devices.</li>
           </ul>
         </div>
 
         <div className="resume-item">
           <div className="resume-row">
-            <strong>Barber shop website</strong>
-            <span>JavaScript</span>
+            <strong>NutriFit Website</strong>
+            <span>React.js</span>
           </div>
           <ul className="resume-bullets">
-            <li><strong>About project</strong> Created a responsive website for a barber shop, presenting services like haircuts, dry shampoo, and beard trimming, along with detailed staff profiles to improve customer engagement.</li>
+            <li>Designed and developed a responsive nutrition and fitness website using React.js with reusable components, modern UI design, and optimized performance for better accessibility across devices.</li>
           </ul>
         </div>
       </div>
 
       <div className="resume-section">
-        <h3>INTERNSHIP</h3>
+        <h3>EXPERIENCE</h3>
         <div className="resume-hr"></div>
         
         <div className="resume-item">
           <div className="resume-row">
-            <strong>Oasis Infobyte</strong>
-            <span>1-12-2023 – 1-1-2024</span>
+            <strong>Ultimate iTech Pvt. Ltd.</strong>
+            <span>26-03-2026 – Present</span>
           </div>
-          <div className="resume-desc">Web Development and Designing</div>
+          <div className="resume-desc">Trainee Application Developer (React Native)</div>
           <ul className="resume-bullets">
-            <li>During my web developer internship at Oasis Infobyte, I gained hands-on experience in designing and implementing responsive web applications using HTML, CSS, and JavaScript. I worked on various projects, collaborating with cross-functional teams to enhance user interfaces, improve site performance, and ensure mobile compatibility.</li>
+            <li>Currently developing React Native applications, contributing to projects such as Eimager and Indian Trade Mart. Working on responsive UI development, REST API integration, bug fixing, performance optimization, and delivering scalable, user-friendly mobile applications.</li>
           </ul>
         </div>
 
         <div className="resume-item">
           <div className="resume-row">
-            <strong>Code Soft</strong>
-            <span>19-7-2024 – 19-8-2024</span>
+            <strong>Oasis Infobyte</strong>
+            <span>1-12-2023 – 1-1-2024</span>
           </div>
-          <div className="resume-desc">Web Development</div>
+          <div className="resume-desc">Web Development Intern</div>
           <ul className="resume-bullets">
-            <li>During my one-month web development internship at Code Soft, I learned a variety of skills and successfully completed several projects, including a calculator, a landing page, and a portfolio webpage, which enhanced my practical experience in web development.</li>
+            <li>During my internship at Oasis Infobyte, I worked on developing responsive web applications using React.js, HTML, CSS, and JavaScript. I contributed to UI development, reusable component creation, performance optimization, and improving user experience across different devices.</li>
           </ul>
         </div>
       </div>
@@ -144,8 +144,8 @@ export default function PrintLayout() {
         <h3>ACHIEVEMENTS</h3>
         <div className="resume-hr"></div>
         <ul className="resume-bullets">
-          <li>I have solved over 400 questions on GeeksforGeeks, LeetCode, and CodeStudio, enhancing my problem-solving skills and coding proficiency through diverse and challenging exercises on these platforms.</li>
-          <li>Star Performer of AICTE Oasis Infobyte Internship – for exceptional dedication and outstanding contribution during tenure.</li>
+          <li>Solved 400+ coding problems across GeeksforGeeks, LeetCode, and CodeStudio, strengthening problem-solving skills and algorithmic understanding.</li>
+          <li>Star Performer of AICTE Oasis Infobyte Internship for outstanding contribution and dedication.</li>
         </ul>
       </div>
 
@@ -153,8 +153,8 @@ export default function PrintLayout() {
         <h3>CERTIFICATIONS</h3>
         <div className="resume-hr"></div>
         <ul className="resume-bullets" style={{ marginBottom: 0 }}>
-          <li>Fundamental of ‘C++’ Programming (E & ICT Academy, IIT Kanpur)</li>
-          <li>Fundamental of Python Programming (YBI Foundation, Scaler)</li>
+          <li>Fundamentals of ‘C++’ Programming (E & ICT Academy, IIT Kanpur)</li>
+          <li>Fundamentals of Python Programming (YBI Foundation, Scaler)</li>
         </ul>
       </div>
     </div>

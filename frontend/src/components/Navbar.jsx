@@ -18,7 +18,7 @@ export default function Navbar({ activeSection, scrollTo, toggleTheme, theme, se
         
         {/* Toggleable Navigation Links */}
         <nav className={`nav-links ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
-          {['home', 'projects', 'experience', 'skills', 'contact'].map((sec) => (
+          {['home', 'projects', 'experience', 'skills', 'faq', 'contact'].map((sec) => (
             <button
               key={sec}
               onClick={() => handleNavClick(sec)}

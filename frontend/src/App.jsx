@@ -7,6 +7,7 @@ import Projects from './components/Projects'
 import Experience from './components/Experience'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
+import Faq from './components/Faq'
 import CommandPalette from './components/CommandPalette'
 import PrintLayout from './components/PrintLayout'
 
@@ -74,6 +75,7 @@ function App() {
     { label: "Navigate: Selected Works", action: () => scrollTo('projects'), shortcut: "P" },
     { label: "Navigate: Experience History", action: () => scrollTo('experience'), shortcut: "E" },
     { label: "Navigate: Technical Profile", action: () => scrollTo('skills'), shortcut: "S" },
+    { label: "Navigate: FAQ Section", action: () => scrollTo('faq'), shortcut: "F" },
     { label: "Navigate: Contact Details", action: () => scrollTo('contact'), shortcut: "C" },
     { label: "Action: Toggle Light/Dark Mode", action: toggleTheme, shortcut: "T" },
     { label: "Action: Print/Save Resume as PDF", action: handlePrint, shortcut: "R" }
@@ -185,6 +187,7 @@ function App() {
         <Projects />
         <Experience />
         <Skills />
+        <Faq />
         <Contact
           formData={formData}
           setFormData={setFormData}
