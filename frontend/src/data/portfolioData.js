@@ -19,6 +19,13 @@ export const projects = [
     desc: "Built a cross-platform React Native app for enterprise screening. Features digital identity checks, qualification reviews, criminal record queries, and automated billing through Razorpay.",
     tech: ["React Native", "TypeScript", "Node.js", "SQL Backend"],
     link: "https://www.eimager.com/"
+  },
+  {
+    title: "NutriFit",
+    subtitle: "Smart Recipe & Calorie Planner",
+    desc: "Designed and built a responsive web application for Indian food search, calorie calculations, and daily meal planning. Features weight-based nutrition tracking, TDEE calculator, and A4 PDF export.",
+    tech: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
+    link: "https://nutrifitxnr.netlify.app"
   }
 ]
 
