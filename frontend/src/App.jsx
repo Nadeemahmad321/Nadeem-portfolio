@@ -20,7 +20,7 @@ function App() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' })
   const [formStatus, setFormStatus] = useState('')
   const [isLoading, setIsLoading] = useState(true)
-  
+
   // Custom Accent Colors State
   const [accentColor, setAccentColor] = useState('blue')
   const [isCustomizerOpen, setIsCustomizerOpen] = useState(false)
@@ -201,7 +201,7 @@ function App() {
   }
 
   return (
-    <div className={`portfolio-app ${!isLoading ? 'content-loaded' : ''}`}>
+    <div className="portfolio-app">
       {/* Custom Preloader overlay */}
       {isLoading && (
         <div className="preloader">
@@ -261,8 +261,8 @@ function App() {
 
       {/* Floating Accent Color Customizer */}
       <div className={`accent-customizer ${isCustomizerOpen ? 'open' : ''}`}>
-        <button 
-          onClick={() => setIsCustomizerOpen(!isCustomizerOpen)} 
+        <button
+          onClick={() => setIsCustomizerOpen(!isCustomizerOpen)}
           className="customizer-toggle"
           aria-label="Customize theme accent color"
         >

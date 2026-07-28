@@ -27,7 +27,7 @@ export default function Contact({ formData, setFormData, handleSubmit, formStatu
           </div>
 
           <div className="social-links">
-            <a href="https://github.com/nadeemahmad23122001" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <a href="https://github.com/Nadeemahmad321" target="_blank" rel="noreferrer" aria-label="GitHub">
               <Icons.Github />
             </a>
             <a href="https://www.linkedin.com/in/nadeem-ahmad-8332a628a/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
