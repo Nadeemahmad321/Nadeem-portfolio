@@ -1,22 +1,22 @@
 export const projects = [
   {
     title: "HHHJobs",
-    subtitle: "Enterprise Job Finder Portal",
-    desc: "Architected a streamlined recruitment portal optimized for fast queries. Features live multi-parameter job filters, application status trackers, and secure dashboard metrics for recruiters.",
-    tech: ["React.js", "Node.js", "Express", "SQL Schema Design"],
+    subtitle: "Recruitment Mobile App",
+    desc: "Architected a streamlined mobile recruitment application optimized for fast queries. Features live multi-parameter job filters, application status trackers, and secure dashboard metrics for recruiters.",
+    tech: ["React Native", "Node.js", "Express", "SQL Schema Design"],
     link: "https://hhh-jobs.com/"
   },
   {
     title: "IndianTradeMart",
-    subtitle: "B2B Marketplace & Networking Hub",
-    desc: "Developed a B2B matching directory serving Indian manufacturers and global trade organizations. Implemented highly performant vendor dashboards and optimized indexing for category searches.",
-    tech: ["React.js", "Express.js", "Node.js", "SQL Databases"],
+    subtitle: "B2B Marketplace Mobile App",
+    desc: "Developed a B2B matching mobile application serving Indian manufacturers and global trade organizations. Implemented highly performant vendor dashboards and optimized indexing for category searches.",
+    tech: ["React Native", "Express.js", "Node.js", "SQL Databases"],
     link: "https://indiantrademart.com/"
   },
   {
     title: "Eimager",
-    subtitle: "Employee Background Verification Engine",
-    desc: "Built a cross-platform React Native app for enterprise screening. Features digital identity checks, qualification reviews, criminal record queries, and automated billing through Razorpay.",
+    subtitle: "Background Screening Mobile App",
+    desc: "Built a cross-platform React Native mobile application for enterprise screening. Features digital identity checks, qualification reviews, criminal record queries, and automated billing through Razorpay.",
     tech: ["React Native", "TypeScript", "Node.js", "SQL Backend"],
     link: "https://www.eimager.com/"
   },
