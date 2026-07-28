@@ -206,7 +206,6 @@ function App() {
       {isLoading && (
         <div className="preloader">
           <div className="preloader-content">
-            <div className="preloader-spinner"></div>
             <div className="preloader-text">
               <span className="char">N</span>
               <span className="char">A</span>
