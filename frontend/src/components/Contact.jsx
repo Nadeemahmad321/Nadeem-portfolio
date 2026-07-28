@@ -30,7 +30,7 @@ export default function Contact({ formData, setFormData, handleSubmit, formStatu
             <a href="https://github.com/Nadeemahmad321" target="_blank" rel="noreferrer" aria-label="GitHub">
               <Icons.Github />
             </a>
-            <a href="https://www.linkedin.com/in/nadeem-ahmad-8332a628a/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/nadeem-ahmad-73115821b" target="_blank" rel="noreferrer" aria-label="LinkedIn">
               <Icons.Linkedin />
             </a>
           </div>
