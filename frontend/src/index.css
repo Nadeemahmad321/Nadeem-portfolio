@@ -69,51 +69,6 @@ body {
   background: var(--muted);
 }
 
-/* Hide default cursor on desktop only */
-@media (pointer: fine) {
-  html, body, * {
-    cursor: none !important;
-  }
-}
-
-/* Custom Cursor */
-.cursor-dot {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--highlight);
-  box-shadow: 0 0 8px var(--highlight), 0 0 16px var(--highlight-glow);
-  pointer-events: none;
-  z-index: 9999;
-  opacity: 0;
-  will-change: transform;
-}
-
-.cursor-ring {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  border: 1.5px solid var(--highlight);
-  opacity: 0;
-  pointer-events: none;
-  z-index: 9998;
-  will-change: transform;
-  transition: border-color 0.2s ease, width 0.2s ease, height 0.2s ease;
-}
-
-.cursor-ring.cursor-click {
-  width: 26px;
-  height: 26px;
-  border-color: #a855f7;
-  background: rgba(168, 85, 247, 0.08);
-}
-
 .portfolio-app {
   min-height: 100vh;
   position: relative;
@@ -2027,6 +1982,7 @@ section {
 }
 
 @keyframes text-bounce {
+
   0%,
   100% {
     top: 0px;
@@ -2055,15 +2011,23 @@ section {
 }
 
 @keyframes caret-blink {
-  from, to { color: transparent }
-  50% { color: var(--highlight) }
+
+  from,
+  to {
+    color: transparent
+  }
+
+  50% {
+    color: var(--highlight)
+  }
 }
 
 /* --- Project Case Study Modals --- */
 .project-card.clickable {
   cursor: pointer;
   position: relative;
-  padding-bottom: 56px; /* Space for case study link */
+  padding-bottom: 56px;
+  /* Space for case study link */
 }
 
 .view-case-study {
@@ -2242,11 +2206,23 @@ section {
 }
 
 @keyframes modal-fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes modal-slide-up {
-  from { transform: translateY(30px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

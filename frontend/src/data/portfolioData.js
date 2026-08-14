@@ -26,7 +26,7 @@ export const projects = [
     subtitle: "Background Screening Mobile App",
     desc: "Built a cross-platform React Native mobile application for enterprise screening. Features digital identity checks, qualification reviews, criminal record queries, and automated billing through Razorpay.",
     tech: ["React Native", "TypeScript", "Node.js", "SQL Backend"],
-    link: "https://play.google.com/apps/testing/com.eimagerproject",
+    link: "https://play.google.com/store/apps/details?id=com.eimagerproject&pcampaignid=web_share",
     category: "mobile",
     challenge: "Integrating secure multi-step verification APIs with zero lag and handling payment callbacks reliably.",
     solution: "Designed a state-managed Razorpay callback verification system to automatically trigger screening results.",
