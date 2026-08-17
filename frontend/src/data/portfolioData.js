@@ -15,7 +15,7 @@ export const projects = [
     subtitle: "B2B Marketplace Mobile App",
     desc: "Developed a B2B matching mobile application serving Indian manufacturers and global trade organizations. Implemented highly performant vendor dashboards and optimized indexing for category searches.",
     tech: ["React Native", "Express.js", "Node.js", "SQL Databases"],
-    link: "https://play.google.com/apps/testing/com.indiantrademart",
+    link: "https://play.google.com/store/apps/details?id=com.indiantrademart&pcampaignid=web_share",
     category: "mobile",
     challenge: "Scaling B2B vendor search matching across highly diverse manufacturer product catalog indices.",
     solution: "Designed efficient SQL queries and text-search catalog index patterns for quick search responses.",
