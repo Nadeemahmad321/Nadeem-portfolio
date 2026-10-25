@@ -51,7 +51,7 @@ export default function Hero({ scrollTo }) {
           <span className="highlight-text">Mobile & Web Engineer</span>
         </h1>
         <p className="hero-lead">
-          Specialized in <span className="typewriter-text">{displayText}</span><span className="typewriter-caret">|</span> Currently crafting high-performance mobile and web apps at Ultimate Itech Pvt Ltd.
+          Specialized in <span className="typewriter-text">{displayText}</span><span className="typewriter-caret">|</span> Application Developer at <b>Ultimate iTech Pvt. Ltd.</b> & Founder at <b>R2Cart</b>.
         </p>
         <div className="hero-actions">
           <button onClick={() => scrollTo('projects')} className="btn btn-primary">

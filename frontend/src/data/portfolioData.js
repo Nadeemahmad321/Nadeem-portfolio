@@ -2,6 +2,7 @@ export const projects = [
   {
     title: "R2Cart",
     subtitle: "10-Min Quick Grocery Delivery Platform (Founder & Full-Stack Architect)",
+    featured: true,
     desc: "Architected, built, and launched a production-grade 10-minute grocery delivery platform serving Hathua & Gopalganj (Bihar). Engineered the responsive customer web portal, real-time Admin CMS, multi-pack product variations, automated Cloudinary media pipelines, and dynamic category catalogue indexing.",
     tech: ["React.js", "Vite", "Node.js", "Express.js", "Prisma ORM", "MySQL", "Cloudinary CDN", "PWA"],
     link: "https://r2cart.in",
@@ -100,13 +101,14 @@ export const experience = [
     ]
   },
   {
-    role: "Trainee Application Developer (React Native)",
+    role: "Application Developer (React Native)",
     company: "Ultimate iTech Pvt. Ltd.",
-    duration: "26-03-2026 – Present",
+    duration: "26 September 2024 – Present",
     desc: [
-      "Currently developing React Native applications, contributing to projects such as Eimager and Indian Trade Mart.",
-      "Working on responsive UI development, REST API integration, bug fixing, and performance optimization.",
-      "Delivering scalable, user-friendly mobile applications and maintaining smooth interface rendering."
+      "Serving as Application Developer building cross-platform React Native mobile applications, driving core development for production apps including Eimager and Indian Trade Mart.",
+      "Engineered high-performance native-feel UI components, integrated complex REST APIs, authentication flows, and payment SDKs like Razorpay.",
+      "Streamlined state management and memory handling, cutting screen re-render latency and boosting mobile performance across Android and iOS.",
+      "Collaborated with cross-functional product and backend teams to release regular updates to the Google Play Store."
     ]
   },
   {

@@ -74,6 +74,16 @@ export default function PrintLayout() {
         
         <div className="resume-item">
           <div className="resume-row">
+            <strong>R2Cart Quick-Commerce Platform</strong>
+            <span>React.js · Node.js · Express · MySQL · Prisma</span>
+          </div>
+          <ul className="resume-bullets">
+            <li>Architected and launched a production 10-minute grocery quick-commerce platform. Built responsive customer web app, RESTful Express APIs with Prisma ORM & MySQL, real-time Admin CMS, and automated Cloudinary pipelines (https://r2cart.in).</li>
+          </ul>
+        </div>
+
+        <div className="resume-item">
+          <div className="resume-row">
             <strong>Eimager Mobile App</strong>
             <span>React Native</span>
           </div>
@@ -119,12 +129,23 @@ export default function PrintLayout() {
         
         <div className="resume-item">
           <div className="resume-row">
-            <strong>Ultimate iTech Pvt. Ltd.</strong>
-            <span>26-03-2026 – Present</span>
+            <strong>R2Cart (Quick-Commerce Platform)</strong>
+            <span>2024 – Present</span>
           </div>
-          <div className="resume-desc">Trainee Application Developer (React Native)</div>
+          <div className="resume-desc">Founder & Lead Full-Stack Engineer</div>
           <ul className="resume-bullets">
-            <li>Currently developing React Native applications, contributing to projects such as Eimager and Indian Trade Mart. Working on responsive UI development, REST API integration, bug fixing, performance optimization, and delivering scalable, user-friendly mobile applications.</li>
+            <li>Designed, built, and deployed an end-to-end 10-minute grocery delivery platform from scratch. Engineered the React/Vite web application, Node/Express backend APIs, database architecture, and complete Admin Dashboard.</li>
+          </ul>
+        </div>
+
+        <div className="resume-item">
+          <div className="resume-row">
+            <strong>Ultimate iTech Pvt. Ltd.</strong>
+            <span>26-09-2024 – Present</span>
+          </div>
+          <div className="resume-desc">Application Developer (React Native)</div>
+          <ul className="resume-bullets">
+            <li>Developing production React Native mobile applications, driving core feature development for Eimager and Indian Trade Mart. Engineered native-feel UI components, REST API integration, state management, bug fixing, and performance optimization for 60fps mobile rendering.</li>
           </ul>
         </div>
 

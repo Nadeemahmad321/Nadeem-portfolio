@@ -35,7 +35,18 @@ export default function Projects() {
             key={`${proj.title}-${filter}`} 
             className={`project-card clickable reveal delay-${(idx + 1) * 100} active`}
             onClick={() => setSelectedProj(proj)}
+            style={proj.featured ? { border: '1.5px solid rgba(16, 185, 129, 0.5)', boxShadow: '0 8px 24px -4px rgba(16, 185, 129, 0.14)' } : undefined}
           >
+            {proj.featured && (
+              <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginBottom:'10px'}}>
+                <span style={{background:'linear-gradient(135deg, #10b981, #047857)',color:'#ffffff',fontSize:'10.5px',fontWeight:800,letterSpacing:'0.4px',padding:'3px 9px',borderRadius:'12px',display:'inline-flex',alignItems:'center',gap:'4px'}}>
+                  ⭐ FLAGSHIP FOUNDER PLATFORM
+                </span>
+                <span style={{fontSize:'11px',fontWeight:700,color:'#10b981',display:'inline-flex',alignItems:'center',gap:'4px'}}>
+                  <span style={{width:'7px',height:'7px',borderRadius:'50%',background:'#10b981',display:'inline-block'}}></span> Live
+                </span>
+              </div>
+            )}
             <div className="card-top">
               <span className="card-subtitle">{proj.subtitle}</span>
               <a 
