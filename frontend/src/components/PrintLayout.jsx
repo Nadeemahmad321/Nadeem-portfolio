@@ -74,18 +74,28 @@ export default function PrintLayout() {
         
         <div className="resume-item">
           <div className="resume-row">
-            <strong>R2Cart Quick-Commerce Platform</strong>
-            <span>React.js · Node.js · Express · MySQL · Prisma</span>
+            <strong>R2Cart Quick-Commerce App & Web</strong>
+            <span>React Native · React.js · Node.js · Express · MySQL · Prisma</span>
           </div>
           <ul className="resume-bullets">
-            <li>Architected and launched a production 10-minute grocery quick-commerce platform. Built responsive customer web app, RESTful Express APIs with Prisma ORM & MySQL, real-time Admin CMS, and automated Cloudinary pipelines (https://r2cart.in).</li>
+            <li>Architected and launched a 10-minute grocery quick-commerce platform and mobile apps. Built responsive customer web app, RESTful Express APIs with Prisma ORM & MySQL, real-time Admin CMS, and automated Cloudinary pipelines (https://r2cart.in).</li>
+          </ul>
+        </div>
+
+        <div className="resume-item">
+          <div className="resume-row">
+            <strong>HHHJobs Mobile App</strong>
+            <span>React Native (Google Play Store)</span>
+          </div>
+          <ul className="resume-bullets">
+            <li>Developed and launched a recruitment mobile app on Google Play Store featuring live job filters, real-time applicant tracking metrics, and low-latency API queries.</li>
           </ul>
         </div>
 
         <div className="resume-item">
           <div className="resume-row">
             <strong>Eimager Mobile App</strong>
-            <span>React Native</span>
+            <span>React Native (Google Play Store)</span>
           </div>
           <ul className="resume-bullets">
             <li>Developed a React Native application for an employee background verification platform with responsive UI, REST API integration, authentication, and performance optimization to deliver a smooth mobile experience.</li>
@@ -95,7 +105,7 @@ export default function PrintLayout() {
         <div className="resume-item">
           <div className="resume-row">
             <strong>Indian Trade Mart Mobile App</strong>
-            <span>React Native</span>
+            <span>React Native (Google Play Store)</span>
           </div>
           <ul className="resume-bullets">
             <li>Developed a React Native B2B marketplace application with responsive UI, reusable components, REST API integration, product browsing, and performance optimization for an enhanced user experience.</li>
@@ -129,23 +139,34 @@ export default function PrintLayout() {
         
         <div className="resume-item">
           <div className="resume-row">
-            <strong>R2Cart (Quick-Commerce Platform)</strong>
-            <span>2024 – Present</span>
+            <strong>Ultimate iTech Pvt. Ltd.</strong>
+            <span>26-09-2024 – Present</span>
           </div>
-          <div className="resume-desc">Founder & Lead Full-Stack Engineer</div>
+          <div className="resume-desc">Application Developer (React Native)</div>
           <ul className="resume-bullets">
-            <li>Designed, built, and deployed an end-to-end 10-minute grocery delivery platform from scratch. Engineered the React/Vite web application, Node/Express backend APIs, database architecture, and complete Admin Dashboard.</li>
+            <li>Promoted to Application Developer leading cross-platform React Native apps including Eimager, Indian Trade Mart, and HHHJobs. Engineered native-feel UI components, REST API integration, state management, bug fixing, and performance optimization for 60fps mobile rendering.</li>
           </ul>
         </div>
 
         <div className="resume-item">
           <div className="resume-row">
             <strong>Ultimate iTech Pvt. Ltd.</strong>
-            <span>26-09-2024 – Present</span>
+            <span>26-03-2024 – 26-09-2024</span>
           </div>
-          <div className="resume-desc">Application Developer (React Native)</div>
+          <div className="resume-desc">Trainee Application Developer (React Native)</div>
           <ul className="resume-bullets">
-            <li>Developing production React Native mobile applications, driving core feature development for Eimager and Indian Trade Mart. Engineered native-feel UI components, REST API integration, state management, bug fixing, and performance optimization for 60fps mobile rendering.</li>
+            <li>Completed 6-month intensive hands-on mobile development training on React Native architecture, state management, and REST API integration. Earned promotion to full Application Developer based on production deliveries.</li>
+          </ul>
+        </div>
+
+        <div className="resume-item">
+          <div className="resume-row">
+            <strong>R2Cart (Quick-Commerce Platform)</strong>
+            <span>2024 – Present</span>
+          </div>
+          <div className="resume-desc">Founder & Lead Full-Stack Engineer</div>
+          <ul className="resume-bullets">
+            <li>Designed, built, and deployed an end-to-end 10-minute grocery delivery platform from scratch. Engineered the React/Vite web application, Node/Express backend APIs, database architecture, and complete Admin Dashboard.</li>
           </ul>
         </div>
 

@@ -16,7 +16,7 @@ export const projects = [
     subtitle: "Recruitment Mobile App",
     desc: "Architected a streamlined mobile recruitment application optimized for fast queries. Features live multi-parameter job filters, application status trackers, and secure dashboard metrics for recruiters.",
     tech: ["React Native", "Node.js", "Express", "SQL Schema Design"],
-    link: "https://hhh-jobs.com/",
+    link: "https://play.google.com/store/apps/details?id=com.hhhjobs",
     category: "mobile",
     challenge: "Building a recruiter dashboard that processes real-time applicant tracking metrics with minimal query delay.",
     solution: "Optimized SQL indexing for job filter lookups, reducing query fetch time by 30%.",
@@ -67,15 +67,15 @@ export const projects = [
     architecture: ["React Components", "Vite Bundler", "Custom CSS Customizer Panel", "EmailJS Gateway"]
   },
   {
-    title: "Grocify",
-    subtitle: "Full-Stack Grocery Commerce App",
-    desc: "A mobile grocery commerce application built with React Native, powered by a Node.js + Express + MongoDB backend. Implemented secure OTP authentication, wishlist, order management, and full admin panels.",
-    tech: ["React Native", "TypeScript", "Node.js", "Express", "MongoDB"],
-    link: "https://github.com/Nadeemahmad321/Grocify",
+    title: "R2Cart App",
+    subtitle: "Quick Grocery Delivery Mobile App",
+    desc: "A cross-platform React Native mobile application for 10-minute grocery commerce. Features lightning-fast item browsing, instant cart calculations, secure OTP login, push order notifications, and live delivery status updates.",
+    tech: ["React Native", "TypeScript", "Node.js", "Express", "REST APIs"],
+    link: "https://r2cart.in",
     category: "mobile",
-    challenge: "Handling secure OTP authentication, cart synchronizations, and admin updates smoothly across mobile platforms.",
-    solution: "Configured Express-JWT middlewares, Mongoose database models, and React Native Redux style hooks.",
-    architecture: ["React Native Frontend", "Node & Express API Server", "MongoDB order schemas"]
+    challenge: "Handling secure OTP authentication, cart synchronizations, and quick checkout transitions smoothly across mobile platforms.",
+    solution: "Configured Express-JWT middlewares, optimized mobile state reducers, and native animated transitions.",
+    architecture: ["React Native Mobile App", "Node & Express API Server", "Prisma Database Schemas"]
   }
 ]
 
@@ -105,10 +105,20 @@ export const experience = [
     company: "Ultimate iTech Pvt. Ltd.",
     duration: "26 September 2024 – Present",
     desc: [
-      "Serving as Application Developer building cross-platform React Native mobile applications, driving core development for production apps including Eimager and Indian Trade Mart.",
+      "Promoted to full Application Developer leading cross-platform React Native mobile application development for enterprise apps including Eimager, Indian Trade Mart, and HHHJobs.",
       "Engineered high-performance native-feel UI components, integrated complex REST APIs, authentication flows, and payment SDKs like Razorpay.",
-      "Streamlined state management and memory handling, cutting screen re-render latency and boosting mobile performance across Android and iOS.",
-      "Collaborated with cross-functional product and backend teams to release regular updates to the Google Play Store."
+      "Streamlined state management and memory handling, cutting screen re-render latency and maintaining smooth 60fps performance across Android and iOS.",
+      "Collaborated with cross-functional product and backend teams to release regular production updates to the Google Play Store."
+    ]
+  },
+  {
+    role: "Trainee Application Developer (React Native)",
+    company: "Ultimate iTech Pvt. Ltd.",
+    duration: "26 March 2024 – 26 September 2024",
+    desc: [
+      "Completed 6-month intensive hands-on mobile development training on React Native architecture, modern JavaScript/TypeScript, and mobile state patterns.",
+      "Assisted in component development, REST API consumption, screen layout responsiveness, and bug resolution for live client applications.",
+      "Earned formal promotion to Application Developer based on high code quality, delivery speed, and production contributions."
     ]
   },
   {
