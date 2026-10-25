@@ -1,5 +1,16 @@
 export const projects = [
   {
+    title: "R2Cart",
+    subtitle: "10-Min Quick Grocery Delivery Platform (Founder & Full-Stack Architect)",
+    desc: "Architected, built, and launched a production-grade 10-minute grocery delivery platform serving Hathua & Gopalganj (Bihar). Engineered the responsive customer web portal, real-time Admin CMS, multi-pack product variations, automated Cloudinary media pipelines, and dynamic category catalogue indexing.",
+    tech: ["React.js", "Vite", "Node.js", "Express.js", "Prisma ORM", "MySQL", "Cloudinary CDN", "PWA"],
+    link: "https://r2cart.in",
+    category: "web",
+    challenge: "Engineering sub-second catalogue searches, smooth multi-pack SKU calculations, and Cloudinary asset management without server or UI lag.",
+    solution: "Designed normalized Prisma schemas, batch SQL position reordering with 30s transactions, optimistic React state updates, and Cloudinary CDN optimization.",
+    architecture: ["React Client SPA (Vite)", "RESTful Express API Gateway", "Prisma ORM & MySQL Database", "Cloudinary Media CDN Engine"]
+  },
+  {
     title: "HHHJobs",
     subtitle: "Recruitment Mobile App",
     desc: "Architected a streamlined mobile recruitment application optimized for fast queries. Features live multi-parameter job filters, application status trackers, and secure dashboard metrics for recruiters.",
@@ -77,6 +88,17 @@ export const skills = [
 ]
 
 export const experience = [
+  {
+    role: "Founder & Lead Full-Stack Engineer",
+    company: "R2Cart (Quick-Commerce Platform)",
+    duration: "2024 – Present",
+    desc: [
+      "Founded, designed, and launched a live 10-minute grocery quick-commerce platform serving customers in Hathua, Bihar.",
+      "Engineered the customer web application (React/Vite) with instant cart operations, multi-lingual English/Hindi support, and PWA capabilities.",
+      "Built high-throughput Node.js & Express REST APIs with Prisma ORM, JWT auth, bulk Excel/CSV product imports, and Cloudinary media pipelines.",
+      "Created a comprehensive Admin Dashboard featuring live catalogue management, category reordering, dispatch tracking, and store policies."
+    ]
+  },
   {
     role: "Trainee Application Developer (React Native)",
     company: "Ultimate iTech Pvt. Ltd.",

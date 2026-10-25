@@ -7,10 +7,11 @@ export default function Hero({ scrollTo }) {
   const [isDeleting, setIsDeleting] = useState(false)
 
   const phrases = [
+    "Founder @ R2Cart.",
     "React Native Dev.",
+    "Full-Stack Engineering.",
     "REST API Architecture.",
-    "Performance Optimization.",
-    "Database Schema Design."
+    "Performance Optimization."
   ]
 
   useEffect(() => {
